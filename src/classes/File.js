@@ -19,6 +19,6 @@ export default class File extends S3{
   }
 
   async downloadFromS3() {
-    await this.downloadObject(this.#remoteFileName, this.#remotePathFile, this.#localFileName, this.#localPathFile)
+    return await this.downloadObject(this.#remoteFileName, this.#remotePathFile, this.#localFileName, this.#localPathFile)
   }
 }
